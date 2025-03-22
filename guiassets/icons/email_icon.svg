@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="61px" viewBox="0 0 60 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.752941 0 0 0 0 0.752941 0 0 0 0 0.752941 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Copy" transform="translate(-2.000000, -693.000000)">
+            <g filter="url(#filter-1)" id="Group-6">
+                <g transform="translate(2.000000, 693.000000)">
+                    <path d="M30,0 C46.5684706,0 60,13.6553882 60,30.5 C60,47.3446118 46.5684706,61 30,61 C13.4315294,61 0,47.3446118 0,30.5 C0,13.6553882 13.4315294,0 30,0 Z M45,20 L16,20 C14.3431458,20 13,21.3431458 13,23 L13,23 L13,41 C13,42.6568542 14.3431458,44 16,44 L16,44 L45,44 C46.6568542,44 48,42.6568542 48,41 L48,41 L48,23 C48,21.3431458 46.6568542,20 45,20 L45,20 Z" id="Combined-Shape" fill="#929292"></path>
+                    <path d="M45,25 L45,39 C45,40.1045695 44.1045695,41 43,41 L18,41 C16.8954305,41 16,40.1045695 16,39 L16,25 C16,24.7365069 16.0509547,24.4849148 16.143548,24.2545401 L28.1691139,32.8769221 C29.5624498,33.8760052 31.4375502,33.8760052 32.8308861,32.8769221 L44.856452,24.2545401 C44.9490453,24.4849148 45,24.7365069 45,25 Z" id="Combined-Shape" fill="#929292"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

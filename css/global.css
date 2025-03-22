@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+ /* Variable Declarations*/ 
+ html {
+    /* Colors */
+    --light_grey: #c1c1c1;
+    /* White and black already defined */
+    /* Font declarations will be done with predefined tags */ 
+ }
+
+
+/* Global Styles*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Text Style Declarations */
+h1 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+}
+
+h2 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+h4 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+h5 {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+h6 {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+}
+
+p {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:active {
+    color: var(--light_grey)
+}
+
+/* Global Layout Styles */
+
+nav {
+    align-items: center;
+    display: inline-flex;
+    height: 140px; 
+    justify-content: space-around;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+/* ~ footer ~ */
+
+footer {
+    background-color: black;
+    color:#c1c1c1;
+    margin: 0;
+}
+
+footer p {
+    justify-self: center;
+}
+
+.footerSocials {
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 36px auto;
+    width: 50%;
+}
+
+.social {
+    width: 36px;
+    height: 36px;
+    padding: auto;
+}
+
+.socialIcon {
+    width: 28px;
+}
+
+.socialContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
