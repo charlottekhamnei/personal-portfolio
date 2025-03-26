@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import "global.css";
+
+html {
+    margin: 0;
+}
+
+/* Art Portion Styling */
+
+#art {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 100px 0 0 0;
+
+}
+
+#art a {
+    width: 50vw;
+    height: 50vh;
+}
+
+.artContainer {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 25px;
+    width:100%;
+    height: 100%;
+
+}
+
+.artContainer * {
+    width: 30%;
+    height: auto;
+    align-self: center;
+    padding-right: 82px;
+}
+
+/* UX Case Studies Styling */
+* h4 {
+    padding: 65px;
+}
+
+.uxContainer {
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 65px;
+
+}
+
+#recordcratePreview {
+    width: 15%;
+}
+
+#bomfPreview {
+    width: 20%;
+    height: auto;
+}
+
+#hsPreview {
+    width: 20%;
+    height: auto;
+}
+
+/* Dev Case Studies Styling */
+
+
+#devFlexCtnr {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-self: center;
+    justify-self: center;
+    padding: 0 65px;
+}
+
+.devContainer {
+    width: 100%;
+    justify-content: center;
+    padding-right: 200px;
+}
+
+.devContainer img {
+    height: 406px;
+    width: auto;
+}
+
+/* About Styling */
+
+#aboutContainer {
+    padding: 0 120px 65px 0px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: first baseline;
+    width: 100%;
+}
+
+#aboutContainer img {
+    width: 50%;
+    height: auto;
+}

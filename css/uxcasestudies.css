@@ -1,0 +1,10 @@
+@import url(./global.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#intro {
+    padding-top: 100px;
+}

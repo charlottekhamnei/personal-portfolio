@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import "global.css";
+
+html {
+    margin: 0;
+}
+
+/* positioning image */
+
+#cropContainer {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#landingImage {
+    aspect-ratio: 1 / 1;
+    align-content: baseline;
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+#landingImage img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+/* Footer Styling */
+
+footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    z-index: 20;
+}
+#desContainer * {
+    line-height: 1px;
+}
+
+#nameContainer {
+    display: inline-flex;
+    justify-content: space-between;
+    width: auto;
+    align-content: center;
+}
+
+#nameContainer * {
+    padding-left: 20px;
+    align-content: center;
+}
+
+h3 {
+    padding-right: 20px;
+}
