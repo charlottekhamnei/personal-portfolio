@@ -8,7 +8,7 @@
     --light_grey: #c1c1c1;
     /* White and black already defined */
     /* Font declarations will be done with predefined tags */ 
- }
+ } 
 
 body {
     margin: 0;
@@ -101,4 +101,38 @@ footer {
 
 h3 {
     padding-right: 20px;
+}
+
+/* Responsive Sizing */
+
+@media screen and (max-width: 1249px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #nameContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        padding-bottom: 0px;
+    }
+    h3 {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    footer a {
+        justify-self: center;
+    }
 }

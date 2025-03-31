@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
 }
+body * {
+    margin: 0;
+}
 
 .homeHeader {
     padding: 65px 65px 20px;
@@ -13,14 +16,14 @@ body {
 /* Dev Case Studies Styling */
 
 #dev {
-    padding-top: 50px;
+    padding: 100px 0;
 }
 
 #devFlexCtnr {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-around; 
-    padding: 0 65px; 
+    padding: 50px 65px; 
     width: 100vw; 
     box-sizing: border-box; 
     margin: 0;
@@ -72,6 +75,10 @@ body {
 
 /* Art Portion Styling */
 
+#art h4 {
+    padding: 50px 65px;
+}
+
 #artFlexCont {
     display: inline-flex;
     flex-wrap: wrap;
@@ -115,6 +122,9 @@ body {
 
 /* About Styling */
 
+#about h4 {
+    padding: 50px 65px;
+}
 
 #aboutContainer {
     padding: 0 65px 65px;
@@ -145,6 +155,10 @@ body {
         padding-left: 65px;
     }
 
+    #portCntr {
+        padding-top: 50px;
+    }
+
     #portImg {
         width: 100%;
         height: auto;
@@ -168,6 +182,13 @@ body {
     .uxContainer {
         flex-wrap: wrap;
     }
+
+    #recordcratePreview,
+    #bomfPreview,
+    #hsPreview {
+        width: 100%;
+        padding-top: 50px;
+}
 
     #aboutContainer {
         display: flex;
