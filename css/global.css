@@ -127,7 +127,7 @@ nav {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -141,7 +141,7 @@ nav {
 
 #modalMenu a {
     display: block;
-    padding: 2px;
+    padding: 20px;
     font-size: 24px;
     color: white;
     text-decoration: none;
