@@ -5,103 +5,131 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Charlotte Khamnei's Portfolio</title>
         <meta content="Portfolio of Computing Security Technology Student, Charlotte Khamnei" name="description">
-        <link href="../css/global.css" rel="stylesheet" type="text/css">
+        <link href="../css/home.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">
+        <script type="text/javascript" src="../javascript/hamburgermodal.js"></script>
     </head>
     <nav style="background-color: black; color: white;">
         <div> <!-- spacing container -->
-            <h6>CZK</h6>
-            </div>
+            <h6><a href="./home.html">CZK</a></h6>
         </div>
-        <a href="#art"> 
-            <h4>Art</h4>
-        </a>
-        <a  href="#ux"> 
-            <h4>UX/UI Design</h4>
-        </a>
-        <a  href="#dev"> 
-            <h4>Development</h4>
-        </a>
-        <a  href="#about"> 
-            <h4>About</h4>
-        </a>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
     </nav>
     <body>
-        <div id="art"></div>
-            <a href="./art/dyschronometria.html"> 
-                <div class="artContainer" style="background-color: black;"> <!-- dyscho collection container, blk -->
-                    <img src="../images/art/dyscho/firstloveicon.png"> <!-- IMG REPLACE -->
-                    <h5 style="color: white;">2025 Collection: Dyschronometria</h5>
-                </div>
-            </a>
-            <a href="./art/screenprints.html" style="color:black;">
-                <div class="artContainer, scprContainer" style="background-color: white;"> <!-- screenprinting container, wht -->
-                    <img src="../images/art/screenprints/moonicon.png"> <!-- IMG REPLACE -->
-                    <h5>Screenprints</h5>
-                </div>
-            </a>
-            <a href="./art/pnd.html" style="color:black;>
-                <div class="artContainer, pndContainer" style="background-color: white;"> <!--pnd container, wht -->
-                    <img src="../images/art/pnd/cakeicon.png"> <!-- IMG REPLACE -->
-                    <h5>Paintings & Drawings</h5>
-                </div>
-            </a>
-            <a href="./art/ceramics.html"> 
-                <div class="artContainer, ceramicsContainer" style="background-color: black; color: white;"> <!-- ceramics collection container, blk -->
-                    <img src="../images/art/ceramics/trayicon.png"> <!-- IMG REPLACE -->
-                    <h5>Ceramics</h5>
-                </div>
-            </a>
-        <div id="ux" style="background-color: black; color: white">
-            <h3>UX/UI Designs</h3>
-            <a href="./uxcasestudies/recordcrate.html"> <!-- recordcrate container -->
-                <div class="uxContainer">
-                    <h5><strong>Recordcrate:</strong> A Bandcamp App Redesign</h5>
-                    <img src="">
-                </div>
-            </a>
-            <a href="./uxcasestudies/bomf.html"> <!-- bomf container -->
-                <div class="uxContainer" style="background-color: white; color: black;">
-                    <h5><strong>Back On My Feet</strong</h5>
-                    <img src="">
-                </div>
-            </a>
-            <a href="./uxcasestudies/happysunshine.html"> <!-- happy sunshine container -->
-                <div class="uxContainer">
-                    <h5><strong>Happy Sunshine:</strong> A Food-Truck Mobile App</h5>
-                    <img src="">
-                </div>
-            </a>
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="./home.html"><h4>Home</h4></a>
+                <a href="./home.html#dev"><h4>Development</h4></a>
+                <a href="./home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="./home.html#art"><h4>Art</h4></a>
+                <a href="./home.html#about"><h4>About</h4></a>
+            </div>
         </div>
         <div id="dev">
-            <h4>Development</h4>
+            <h4 class="homeHeader">Development</h4>
             <div id="devFlexCtnr">
                 <a href="./devcasestudies/dvp.html" style="color:black;">
                     <div class="devContainer">
-                        <img>
+                        <img src="../images/devcasestudies/dvp/home.png">
                         <h5>Dragon Virtual Pet</h5>
                     </div>
                 </a>
                 <a href="./devcasestudies/portfolio.html" style="color:black;">
                     <div class="devContainer">
-                        <img>
+                        <img id="portImg" src="../images/devcasestudies/portfolio/Screenshot 2025-03-20 at 9.20.04 PM.png">
                         <h5>Portfolio</h5>
                     </div>
                 </a>
             </div>
         </div>
+        <div id="ux" style="background-color: black; color: white">
+            <h4 class="homeHeader">UX/UI Designs</h4>
+            <a href="./uxcasestudies/recordcrate.html"> <!-- recordcrate container -->
+                <div class="uxContainer">
+                    <h5><strong>Recordcrate:</strong> A Bandcamp App Redesign</h5>
+                    <div id="recordcratePreview">
+                        <img src="../images/uxcasestudies/recordcrate/recordcrate_preview.png">
+                    </div>
+                </div>
+            </a>
+            <a href="./uxcasestudies/bomf.html"> <!-- bomf container -->
+                <div class="uxContainer" style="background-color: white; color: black;">
+                    <h5><strong>Back On My Feet</strong></h5>
+                    <div id="bomfPreview">
+                        <img src="../images/uxcasestudies/bomf/atlanta shirts.jpeg">
+                    </div>
+                </div>
+            </a>
+            <a href="./uxcasestudies/happysunshine.html"> <!-- happy sunshine container -->
+                <div class="uxContainer">
+                    <h5><strong>Happy Sunshine:</strong> A Food-Truck Mobile App</h5>
+                    <div id="hsPreview">
+                        <img src="../images/uxcasestudies/happysunshine/highfidelity.png">
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="art" style="background-color: black;color: white;">
+            <h4 class="homeHeader">Art</h4>
+            <div id="artFlexCont">
+                <a href="./art/dyschronometria.html"> 
+                    <div class="artContainer" style="background-color: black;"> <!-- dyscho collection container, blk -->
+                        <img src="../images/art/dyscho/firstloveicon.png"> <!-- IMG REPLACE -->
+                        <h5 style="color: white;">2025 Collection: Dyschronometria</h5>
+                    </div>
+                </a>
+                <a href="./art/screenprints.html" >
+                    <div class="artContainer" style="background-color: white; color:black;"> <!-- screenprinting container, wht -->
+                        <img src="../images/art/screenprints/moonicon.png"> <!-- IMG REPLACE -->
+                        <h5>Screenprints</h5>
+                    </div>
+                </a>
+                <a href="./art/pnd.html">
+                    <div id="pnd" class="artContainer"> <!--pnd container, wht -->
+                        <h5>Paintings & Drawings</h5>
+                        <img src="../images/art/pnd/cakeicon.png"> <!-- IMG REPLACE -->
+                    </div>
+                </a>
+                <a href="./art/ceramics.html"> 
+                    <div id="cer" class="artContainer" "> <!-- ceramics collection container, blk -->
+                        <h5>Ceramics</h5>
+                        <img src="../images/art/ceramics/trayicon.png"> <!-- IMG REPLACE -->
+                    </div>
+                </a>
+            </div>
+            
+        </div>
         <div id="about" style="background-color: black; color: white">
-            <h4>About</h4>
+            <h4 class="homeHeader">About</h4>
             <div id="aboutContainer">
-                <h5><strong>Hello!</strong> I'm Charlotte Khamnei, based in West Philadelphia. 
+                <div>
+                    <h5><strong>Hello!</strong> I'm Charlotte Khamnei, based in West Philadelphia. 
                     I am pursuing my degree in Computing Security Technology, with minors in UX/UI 
                     Design and Fine Arts. I would describe myself as a multifaceted artist working 
-                    across screenprinting, ink drawings, painting, tattooing, and ceramics. I love cooking, knitting and biking around the city. 
+                    across screenprinting, ink drawings, painting, and ceramics. I love cooking, knitting and biking around the city. 
                     <br>I am passionate about coding and security and am looking forward to a career in healthcare security.</h5>
-                <img src="../images/about.png">
-                <a href="resume.html">
-                    <h5><strong>View my resume here &#8594;</strong></h5>
-                </a>
+                    <a href="./resume.html">
+                        <h5><strong>View my resume here &#8594;</strong></h5>
+                    </a>
+                </div>
+                <div>
+                    <img id="aboutImg" src="../images/about.png">
+                </div>
+                
             </div>
         </div>
     </body>
@@ -111,13 +139,10 @@
                 <a class="social" id="linkedin" href="https://www.linkedin.com/in/charlottekhamnei/">
                     <img class="socialIcon" src="../guiassets/icons/linkedin_icon.svg" alt="LinkedIn logo">
                 </a>
-                <a class="social" id="instagram" href="https://www.instagram.com/ckhamnei/">
-                    <img class="socialIcon" src="../guiassets/icons/instagram_icon.svg" alt="Instagram logo">
-                </a>
-                <a class="social" id="github" href="https://www.github.com">
+                <a class="social" id="github" href="https://github.com/charlottekhamnei?tab=repositories">
                     <img class="socialIcon" src="../guiassets/icons/github_icon.svg" alt="GitHub logo">
                 </a>
-                <a class="social" id="email" href="mailto:charlottekhamni@gmail.com">
+                <a class="social" id="email" href="mailto:charlottekhamnei@gmail.com">
                     <img class="socialIcon" src="../guiassets/icons/email_icon.svg" alt="Charlotte's email">
                 </a>
                 <a class="social" id="dribbble" href="https://dribbble.com/czk27">
@@ -125,6 +150,7 @@
                 </a>
             </div>
         </div>
-        <p>Copyright © 2020 Charlotte Khamnei. All Rights Reserved.<p>
+        <p>Copyright © 2025 Charlotte Khamnei. All Rights Reserved.<p>
+        <p>This website was hand-coded with love.</p>
     </footer>
 </html>

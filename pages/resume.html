@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Charlotte Khamnei's Resume</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <meta content="Portfolio of Computing Security Technology Student, Charlotte Khamnei" name="description">
+        <link href="../css/resume.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">
+        <script type="text/javascript" src="../javascript/hamburgermodal.js"></script>
     </head>
     <nav style="background-color: black; color: white;">
         <div> <!-- spacing container -->
-            <h6>CZK</h6>
-            </div>
+            <h6><a href="./home.html">CZK</a></h6>
         </div>
-        <a href="./home.html#art"> 
-            <h4>Art</h4>
-        </a>
-        <a href="./home.html#ux"> 
-            <h4>UX/UI Design</h4>
-        </a>
-        <a href="./home.html#dev"> 
-            <h4>Development</h4>
-        </a>
-        <a href="./home.html#about"> 
-            <h4>About</h4>
-        </a>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
     </nav>
     <body>
-        <embed src="../images/KhamneiResume25.pdf" width="500" height="375" 
-    type="application/pdf">
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="./home.html"><h4>Home</h4></a>
+                <a href="./home.html#dev"><h4>Development</h4></a>
+                <a href="./home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="./home.html#art"><h4>Art</h4></a>
+                <a href="./home.html#about"><h4>About</h4></a>
+            </div>
+        </div>
+        <div id="resume">
+            <embed src="../images/KhamneiResume25.pdf" width="500" height="375" type="application/pdf">
+        </div>
     </body>
 </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <meta content="Portfolio of Computing Security Technology Student, Charlotte Khamnei" name="description">
+        <link href="../../css/uxcasestudies.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">
+        <script type="text/javascript" src="../../javascript/hamburgermodal.js"></script>
+    </head>
+    <nav style="background-color: black; color: white;">
+        <div> <!-- spacing container -->
+            <h6><a href="../home.html">CZK</a></h6>
+        </div>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="../home.html#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="../home.html#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="../home.html#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="../home.html#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
+    </nav>
+    <body>
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="../home.html"><h4>Home</h4></a>
+                <a href="../home.html#dev"><h4>Development</h4></a>
+                <a href="../home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="../home.html#art"><h4>Art</h4></a>
+                <a href="../home.html#about"><h4>About</h4></a>
+            </div>
+        </div>
+        <div class="section" id="intro" style="background-color: black; color: white;">
+            <h5><strong>Portfolio</strong>: A Personal Website for the Work of Charlotte Khamnei</h5>
+            <div>
+                <p>This project was a blast to work on. Having made multiple portfolio's in the past, I decided to scrap what I had a start fresh to best showcase my new work while at Drexel University. I wanted to showcase my design and development skills while creating space for my other artforms. View the whole repository <a style="text-decoration: underline" href="https://github.com/charlottekhamnei/personal-portfolio">here</a>.</p>
+                <div class="mediaContainer">
+                    <img src="../../images/devcasestudies/portfolio/ceramics.png" width="100%">
+                </div>
+            </div>
+        </div>
+        <div  class="section" id="styling">
+            <h5><Strong>Styling</Strong></h5>
+            <p style="padding-top: 25px;">While creating my personal website, I wanted to show my work with a clear, bold design. While picking the fonts I wanted a signature font that a vintage element and a square dimension. To accompany this bold font, I chose a friendly, readable font for the body of the pages/case studies. </p>
+            <div class="mediaContainerFull">
+                <img src="../../images/devcasestudies/portfolio/Style Tile.png">
+            </div>
+        </div>
+        <div  class="section" id="wireflow" style="background-color: black; color: white;">
+            <h5><strong>Figma Design</strong></h5>
+            <div class="mediaContainerFull">
+                <img id="" src="../../images/devcasestudies/portfolio/Screenshot 2025-03-20 at 7.14.17 PM.png">
+            </div>
+        </div>
+        <div class="section" id="galleryView">
+            <div class="subSection">
+                <div class="textContainer">
+                    <h5><strong>Gallery View</strong></h5>
+                    <p>When designing the gallery view in Figma, it seemed easy enough. Though when coding the masonry style grid, I couldn't seem to remove the gaps between the rows. Finally, I was able to create a masonry grid that is slightly more rigid than my orginal design but highly functional and applicable to all the art pages. Here's a sample of the CSS file that controls the gallery view.</p>
+                </div>
+                <div class="mediaContainer" id="galGallery">
+                    <img  src="../../images/devcasestudies/portfolio/galleryviewsample.png">
+                    <img  src="../../images/devcasestudies/portfolio/galleryview.png">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="galleryView" style="background-color: black; color: white;">
+            <div class="subSection">
+                <div class="textContainer">
+                    <h5><strong>Gallery Modal</strong></h5>
+                    <p>The modal was an essential feature to have for the gallery pages of the website. I wanted to have a description available for each image. Using an event listener for each image, I created a function in JS to show the modal with the image on click. The description shown is based on the alt attribute of each</p>
+                </div>
+                <div class="mediaContainer" id="galGallery">
+                    <img  src="../../images/devcasestudies/portfolio/gallerymodal.png">
+                    <img  src="../../images/devcasestudies/portfolio/modal.png">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="caseStudy">
+            <div class="subSection">
+                <div class="textContainer">
+                    <h5><strong>Case Studies</strong></h5>
+                    <p>For the case studies, I had to consider how to organize different types of media to tell a story of each project. I didn't want to overwhelm the reader with too much writing, so I gave just enough to let the images/videos/pdfs sing on their own. I streamlined the layout for case studies so just one simple CSS file could be applied to each case study page.</p>
+                </div>
+                <div class="mediaContainer" style="width: 25%;">
+                    <video loop autoplay id="mediaFeedVideo" width="100%" height="auto">
+                        <source src="../../images/uxcasestudies/recordcrate/recordcrate_feed.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="socialContainer">
+            <div class= "footerSocials">
+                <a class="social" id="linkedin" href="https://www.linkedin.com/in/charlottekhamnei/">
+                    <img class="socialIcon" src="../../guiassets/icons/linkedin_icon.svg" alt="LinkedIn logo">
+                </a>
+                <a class="social" id="github" href="https://github.com/charlottekhamnei?tab=repositories">
+                    <img class="socialIcon" src="../../guiassets/icons/github_icon.svg" alt="GitHub logo">
+                </a>
+                <a class="social" id="email" href="mailto:charlottekhamnei@gmail.com">
+                    <img class="socialIcon" src="../../guiassets/icons/email_icon.svg" alt="Charlotte's email">
+                </a>
+                <a class="social" id="dribbble" href="https://dribbble.com/czk27">
+                    <img class="socialIcon" src="../../guiassets/icons/dribbble_icon.svg" alt="Dribbble logo">
+                </a>
+            </div>
+        </div>
+        <p>Copyright © 2025 Charlotte Khamnei. All Rights Reserved.<p>
+        <p>This website was hand-coded with love.</p>
+    </footer>
+</html>

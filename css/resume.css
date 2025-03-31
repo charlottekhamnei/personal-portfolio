@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "global.css";
+
+#resume {
+    display: flex;
+    padding: 150px 0px;
+    justify-content: center;
+}
+
+embed {
+    height: 100vh;
+    justify-self: center;
+}

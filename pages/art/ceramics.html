@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ceramics</title>
+        <link href="../../css/galleryview.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">
+        <script type="text/javascript" src="../../javascript/gallerymodal.js"></script>
+        <script type="text/javascript" src="../../javascript/hamburgermodal.js"></script>
     </head>
     <nav style="background-color: black; color: white;">
         <div> <!-- spacing container -->
-            <h6>CZK</h6>
-            </div>
+            <h6><a href="../home.html">CZK</a></h6>
         </div>
-        <a href="../home.html#art"> 
-            <h4>Art</h4>
-        </a>
-        <a href="../home.html#ux"> 
-            <h4>UX/UI Design</h4>
-        </a>
-        <a href="../home.html#dev"> 
-            <h4>Development</h4>
-        </a>
-        <a href="../home.html#about"> 
-            <h4>About</h4>
-        </a>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="../home.html#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="../home.html#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="../home.html#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="../home.html#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
     </nav>
     <body style="background-color: black;">
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="../home.html"><h4>Home</h4></a>
+                <a href="../home.html#dev"><h4>Development</h4></a>
+                <a href="../home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="../home.html#art"><h4>Art</h4></a>
+                <a href="../home.html#about"><h4>About</h4></a>
+            </div>
+        </div>
         <div class="galleryContainer" >
-            <img class="galleryItem" src="../../images/art/ceramics/knittingbowl.png">
-            <img class="galleryItem" src="../../images/art/ceramics/vase.png">
-            <img class="galleryItem" src="../../images/art/ceramics/tray.png">
-            <img class="galleryItem" src="../../images/art/ceramics/title.png">
-            <img class="galleryItem" src="../../images/art/ceramics/mntplanter.png">
-            <img class="galleryItem" src="../../images/art/ceramics/biglegs.png">
-            <img class="galleryItem" src="../../images/art/ceramics/hanging1.png">
-            <img class="galleryItem" src="../../images/art/ceramics/wavy.png">
-            <img class="galleryItem" src="../../images/art/ceramics/pipe.png">
-            <img class="galleryItem" src="../../images/art/ceramics/cross.png">
-            <img class="galleryItem" src="../../images/art/ceramics/hanging2.png">
-            <img class="galleryItem" src="../../images/art/ceramics/largetera.png">
-            <img class="galleryItem" src="../../images/art/ceramics/conetera.png">
-
+            <img class="galleryItem" src="../../images/art/ceramics/knittingbowl.png" alt="Knitting-Bowl Ceramic/Glazed 6inx3.5in">
+            <img class="galleryItem" src="../../images/art/ceramics/title.png" alt=" ">
+            <img class="galleryItem" src="../../images/art/ceramics/vase.png" alt="Geometric-Vase Cermaic/Glazed 8inx5inx1.25in">
+            <img class="galleryItem" src="../../images/art/ceramics/tray.png" alt="Tray Cermaic/Glazed 8inx3.5in">
+            <img class="galleryItem" src="../../images/art/ceramics/mntplanter.png" alt="Mountain-Planter Ceramic/Glazed 5inx4in">
+            <img class="galleryItem" src="../../images/art/ceramics/biglegs.png" alt="Funky-Legged-Planter Ceramic/Unfired 10inx10in">
+            <img class="galleryItem" src="../../images/art/ceramics/hanging1.png" alt="Hanging-Planter Ceramic/Glazed 4inx4in">
+            <img class="galleryItem" src="../../images/art/ceramics/wavy.png" alt="Etched-Waves Cermaic/Glazed 6inx5in">
+            <img class="galleryItem" src="../../images/art/ceramics/pipe.png" alt="Pipe/Insense-Holder Ceramic/Unfired 2inx1in">
+            <img class="galleryItem" src="../../images/art/ceramics/cross.png" alt="Criss-Cross-Planter Ceramic/Glazed 2.5inx2.5in">
+            <img class="galleryItem" src="../../images/art/ceramics/hanging2.png" alt="Hanging-Planter Ceramic/Glazed 4inx4in">
+            <img class="galleryItem" src="../../images/art/ceramics/largetera.png" alt="Large-Planter Terra-cotta/Slip/Unglazed 8inx7in">
+            <img class="galleryItem" src="../../images/art/ceramics/conetera.png" alt="Cone-Planter Terra-cotta/Slip/Unglazed 7inx5in">
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <h5 id="imageDescription"></h5>
         </div>
     </body>
 </html>

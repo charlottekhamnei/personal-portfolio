@@ -1,23 +1,89 @@
 @charset "UTF-8";
 @import "global.css";
 
-html {
+body {
     margin: 0;
+    padding: 0;
+}
+
+.homeHeader {
+    padding: 65px 65px 20px;
+}
+
+/* Dev Case Studies Styling */
+
+#dev {
+    padding-top: 50px;
+}
+
+#devFlexCtnr {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around; 
+    padding: 0 65px; 
+    width: 100vw; 
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+.devContainer {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+
+}
+
+.devContainer img {
+    height: 300px;
+    width: auto;
+}
+
+/* UX Case Studies Styling */
+
+
+.uxContainer {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 65px; 
+    width: 100vw; 
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+/* Specific image adjustments */
+#recordcratePreview,
+#bomfPreview,
+#hsPreview {
+    align-items: center;
+    display: block;
+    height: auto;
+    overflow: hidden;
+    width: 30%;
+}
+.uxContainer img {
+    width: 100%;
+} 
+
+#recordcratePreview img {
+    width: 60%;
 }
 
 /* Art Portion Styling */
 
-#art {
+#artFlexCont {
     display: inline-flex;
     flex-wrap: wrap;
     width: 100vw;
-    padding: 100px 0 0 0;
-
+    margin: 0;
 }
 
-#art a {
-    width: 50vw;
+#artFlexCont a {
+    width: 50%;
     height: 50vh;
+    overflow: hidden;
+    margin: 0;
 }
 
 .artContainer {
@@ -37,67 +103,102 @@ html {
     padding-right: 82px;
 }
 
-/* UX Case Studies Styling */
-* h4 {
-    padding: 65px;
+#pnd {
+    background-color: white;
+    color: black;
 }
 
-.uxContainer {
-    display: inline-flex;
-    align-content: center;
-    justify-content: space-between;
-    padding: 65px;
-
-}
-
-#recordcratePreview {
-    width: 15%;
-}
-
-#bomfPreview {
-    width: 20%;
-    height: auto;
-}
-
-#hsPreview {
-    width: 20%;
-    height: auto;
-}
-
-/* Dev Case Studies Styling */
-
-
-#devFlexCtnr {
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    align-self: center;
-    justify-self: center;
-    padding: 0 65px;
-}
-
-.devContainer {
-    width: 100%;
-    justify-content: center;
-    padding-right: 200px;
-}
-
-.devContainer img {
-    height: 406px;
-    width: auto;
+#cer {
+    background-color: black;
+    color: white;
 }
 
 /* About Styling */
 
+
 #aboutContainer {
-    padding: 0 120px 65px 0px;
+    padding: 0 65px 65px;
     display: inline-flex;
     justify-content: space-between;
     align-content: first baseline;
-    width: 100%;
+    width: auto;
 }
 
-#aboutContainer img {
+
+#aboutContainer div {
     width: 50%;
     height: auto;
+} 
+
+#aboutContainer div img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive styling by pixel width */
+
+@media screen and (max-width: 878px) {
+    #devFlexCtnr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 65px;
+    }
+
+    #portImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .artContainer {
+        flex-wrap: wrap;
+    }
+
+    #artFlexCont {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #about h5 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .uxContainer {
+        flex-wrap: wrap;
+    }
+
+    #aboutContainer {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    #aboutContainer div {
+        width: 100%;
+        height: auto;
+    } 
+    #aboutImg {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1294px) {
+    .artContainer h5 {
+        font-size: 24px;
+    }
+
+    #artFlexCont a {
+        width: 100vw;
+    }
+
+    #pnd {
+        background-color: black;
+        color: white;
+    }
+
+    #cer {
+        background-color: white;
+        color: black;
+    }
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recordcrate</title>
+        <meta content="Portfolio of Computing Security Technology Student, Charlotte Khamnei" name="description">
+        <link href="../../css/uxcasestudies.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">
+        <script type="text/javascript" src="../../javascript/hamburgermodal.js"></script>
+    </head> 
+    <nav style="background-color: black; color: white;">
+        <div> <!-- spacing container -->
+            <h6><a href="../home.html">CZK</a></h6>
+        </div>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="../home.html#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="../home.html#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="../home.html#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="../home.html#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
+    </nav>
+    <body>
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="../home.html"><h4>Home</h4></a>
+                <a href="../home.html#dev"><h4>Development</h4></a>
+                <a href="../home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="../home.html#art"><h4>Art</h4></a>
+                <a href="../home.html#about"><h4>About</h4></a>
+            </div>
+        </div>
+        <div class="section" id="intro" style="background-color: black; color: white;">
+            <h5><strong>Recordcrate</strong>: A Bandcamp App Redesign</h5>
+            <div>
+                <h5>Recordcrate is a suggested app and brand redesign of Bandcamp, a platform for musicians and audio-creators to publish, promote, and sell their work.</h5>
+                <div class="mediaContainer">
+                    <video loop autoplay id="introVideo" width="100%" height="auto">
+                        <source src="../../images/uxcasestudies/recordcrate/recordcrate_full.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div  class="section" id="synopsis">
+            <h5><strong>Synopsis</strong></h5>
+            <div>
+                <p>
+                    Recordcrate is a prototype of suggested solutions to the observed issues of Bandcamp's current mobile app. This case study consists of a full interface analysis (user persona, user needs, user tasks/interactions and their trigger/feedback/rules/modes, user flow, and pain points), a rebrand, and prototypes of suggested interactions/new interface.
+                </p>
+                <div class="mediaContainer" id="icon">
+                    <img  src="../../images/uxcasestudies/recordcrate/yellowrc.webp">
+                </div>
+            </div>
+        </div>
+        <div  class="section" id="userFlow" style="background-color: black; color: white;">
+            <h5><strong>User Flow</strong></h5>
+            <div class="mediaContainerFull">
+                <img id="ufImg" src="../../images/uxcasestudies/recordcrate/user-flow.png">
+            </div>
+        </div>
+        <div  class="section" id="rebrand">
+            <h5><Strong>Rebrand</Strong></h5>
+            <p>When rebranding Bandcamp to Recordcrate, I wanted to emphasize the inclusive nature of Bandcamp's brand and the app's streaming + merchandising services.</p>
+            <div class="mediaContainerFull">
+                <img id="rebrandImg" src="../../images/uxcasestudies/recordcrate/rebrand.png">
+            </div>
+        </div>
+        <div  class="section" id="wireflow" style="background-color: black; color: white;">
+            <h5><strong>Wireflow</strong></h5>
+            <div class="mediaContainerFull">
+                <img id="wireflowImg" src="../../images/uxcasestudies/recordcrate/wireflow.png">
+            </div>
+        </div>
+        <div class="section" id="musicFeed">
+            <div class="subSection">
+                <div class="textContainer">
+                    <h5><strong>Music Feed</strong></h5>
+                    <p>For the music feed, I created a system that would allow for the user to intuitively see what has been newly released by artists or newly suggested for them. The music feed also connects to the filtering system, showing what tags the album has so they can easily find more like it.</p>
+                </div>
+                <div class="mediaContainer">
+                    <video loop autoplay id="mediaFeedVideo" width="100%" height="auto">
+                        <source src="../../images/uxcasestudies/recordcrate/recordcrate_feed.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="discoverPage" style="background-color: black; color: white;">
+            <div class="subSection">
+                <div class="textContainer">
+                    <h5><strong>Discover page/Filtering System</strong></h5>
+                    <p>The filtering system was designed to easily refine searching using a scrollable and nesting catagories/subcatagories, the signature rainbow progress bar, and a gradient, color-coated system based on possible genres. This coordinates with the tagging system featured on the music feed. The animation of the stickers/tags and the album layout is inspired by the analog experience of shopping for records.</p>
+                </div>
+                <div class="mediaContainer">
+                    <!--CHANGE VIDEO TO FULL DISCOVER FEATURE-->
+                    <video loop autoplay id="discoverVideo" width="100%" height="auto">
+                        <source src="../../images/uxcasestudies/recordcrate/recordcrate_filter.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="preview">
+            <div class="subSection">
+                <div class="textContainer">
+                    <h5><strong>Album Preview</strong></h5>
+                    <p>This interaction demonstrates how the user would hold down on the album cover to preview the album on the discover page, which would autoplay the featured song selected by the artist. This allows for the user to quickly find new music based on their selected filters.</p>
+                </div>
+                <div class="mediaContainer">
+                    <!--CHANGE VIDEO TO FULL DISCOVER FEATURE-->
+                    <img id="previewImg" src="../../images/uxcasestudies/recordcrate/preview.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="socialContainer">
+            <div class= "footerSocials">
+                <a class="social" id="linkedin" href="https://www.linkedin.com/in/charlottekhamnei/">
+                    <img class="socialIcon" src="../../guiassets/icons/linkedin_icon.svg" alt="LinkedIn logo">
+                </a>
+                <a class="social" id="github" href="https://github.com/charlottekhamnei?tab=repositories">
+                    <img class="socialIcon" src="../../guiassets/icons/github_icon.svg" alt="GitHub logo">
+                </a>
+                <a class="social" id="email" href="mailto:charlottekhamnei@gmail.com">
+                    <img class="socialIcon" src="../../guiassets/icons/email_icon.svg" alt="Charlotte's email">
+                </a>
+                <a class="social" id="dribbble" href="https://dribbble.com/czk27">
+                    <img class="socialIcon" src="../../guiassets/icons/dribbble_icon.svg" alt="Dribbble logo">
+                </a>
+            </div>
+        </div>
+        <p>Copyright © 2025 Charlotte Khamnei. All Rights Reserved.<p>
+        <p>This website was hand-coded with love.</p>
+    </footer>
+</html>

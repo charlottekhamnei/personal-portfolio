@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Paintings and Drawings</title>
+        <link href="../../css/galleryview.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">
+        <script type="text/javascript" src="../../javascript/gallerymodal.js"></script>
+        <script type="text/javascript" src="../../javascript/hamburgermodal.js"></script>
     </head>
     <nav style="background-color: black; color: white;">
         <div> <!-- spacing container -->
-            <h6>CZK</h6>
-            </div>
+            <h6><a href="../home.html">CZK</a></h6>
         </div>
-        <a href="../home.html#art"> 
-            <h4>Art</h4>
-        </a>
-        <a href="../home.html#ux"> 
-            <h4>UX/UI Design</h4>
-        </a>
-        <a href="../home.html#dev"> 
-            <h4>Development</h4>
-        </a>
-        <a href="../home.html#about"> 
-            <h4>About</h4>
-        </a>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="../home.html#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="../home.html#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="../home.html#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="../home.html#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
     </nav>
     <body style="background-color: black;">
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="../home.html"><h4>Home</h4></a>
+                <a href="../home.html#dev"><h4>Development</h4></a>
+                <a href="../home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="../home.html#art"><h4>Art</h4></a>
+                <a href="../home.html#about"><h4>About</h4></a>
+            </div>
+        </div>
         <div class="galleryContainer" >
-            <img class="galleryItem" src="../../images/art/pnd/earlynone.png">
-            <img class="galleryItem" src="../../images/art/pnd/death.png">
-            <img class="galleryItem" src="../../images/art/pnd/womb.png">
-            <img class="galleryItem" src="../../images/art/pnd/magic.png">
-            <img class="galleryItem" src="../../images/art/pnd/title.png">
-            <img class="galleryItem" src="../../images/art/pnd/horns.png">
-            <img class="galleryItem" src="../../images/art/pnd/sayless.png">
-            <img class="galleryItem" src="../../images/art/pnd/blood.png">
-            <img class="galleryItem" src="../../images/art/pnd/collage.png">
-            <img class="galleryItem" src="../../images/art/pnd/forgiveness.png">
-            <img class="galleryItem" src="../../images/art/pnd/screws.png">
-            <img class="galleryItem" src="../../images/art/pnd/city.png">
-            <img class="galleryItem" src="../../images/art/pnd/rubber.png">
-            <img class="galleryItem" src="../../images/art/pnd/blur.png">
-            <img class="galleryItem" src="../../images/art/pnd/lung.png">
-
+            <img class="galleryItem" src="../../images/art/pnd/earlynone.png" alt="Early-None Mixed-Media 8inx7.5">
+            <img class="galleryItem" src="../../images/art/pnd/death.png" alt="Death-Card India-Ink/Pen 9inx6in">
+            <img class="galleryItem" src="../../images/art/pnd/womb.png" alt="Moon-in-your-Womb India-Ink/Pen 12inx9in">
+            <img class="galleryItem" src="../../images/art/pnd/magic.png" alt="Magic-Flowers Pen 2inx4in">
+            <img class="galleryItem" src="../../images/art/pnd/horns.png" alt="Horns India-Ink 6.75inx4.5in">
+            <img class="galleryItem" src="../../images/art/pnd/sayless.png" alt="Saying-Less India-Ink 14inx11in">
+            <img class="galleryItem" src="../../images/art/pnd/blood.png" alt="Untitled Acrylic/Multi-Media 10inx8in">
+            <img class="galleryItem" src="../../images/art/pnd/collage.png" alt="Collage Multi-Media 8inx14in">
+            <img class="galleryItem" src="../../images/art/pnd/forgiveness.png" alt="Forgiveness India-Ink 14inx9in">
+            <img class="galleryItem" src="../../images/art/pnd/title.png" alt=" ">
+            <img class="galleryItem" src="../../images/art/pnd/screws.png" alt="Lost-Screws India-Ink/Canvas-Paper 15inx10in">
+            <img class="galleryItem" src="../../images/art/pnd/city.png" alt="City Acrylic 15inx10in">
+            <img class="galleryItem" src="../../images/art/pnd/rubber.png" alt="Rubber-Tree Oil 10inx8in">
+            <img class="galleryItem" src="../../images/art/pnd/blur.png" alt="Blur Acrylic 10inx17.5in">
+            <img class="galleryItem" src="../../images/art/pnd/lung.png" alt="Lung Acrylic 17.5inx15in">
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <h5 id="imageDescription"></h5>
         </div>
     </body>
 </html>

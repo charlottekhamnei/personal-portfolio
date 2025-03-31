@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Charlotte Khamnei's Resume</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Screenprints</title>
+        <link href="../../css/galleryview.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="https://charlottekhamnei.files.wordpress.com/2020/11/logo.png?w=32" sizes="32x32">    </head>
+        <script type="text/javascript" src="../../javascript/gallerymodal.js"></script>
+        <script type="text/javascript" src="../../javascript/hamburgermodal.js"></script>
     </head>
     <nav style="background-color: black; color: white;">
         <div> <!-- spacing container -->
-            <h6>CZK</h6>
-            </div>
+            <h6><a href="../home.html">CZK</a></h6>
         </div>
-        <a href="../home.html#art"> 
-            <h4>Art</h4>
-        </a>
-        <a href="../home.html#ux"> 
-            <h4>UX/UI Design</h4>
-        </a>
-        <a href="../home.html#dev"> 
-            <h4>Development</h4>
-        </a>
-        <a href="../home.html#about"> 
-            <h4>About</h4>
-        </a>
+        <div id="hamburgerMenu" onclick="toggleMenu()" style="color:white;">☰</div>
+        <div id="navContainer">
+            <a  href="../home.html#dev"> 
+                <h4>Development</h4>
+            </a>
+            <a  href="../home.html#ux"> 
+                <h4>UX/UI Design</h4>
+            </a>
+            <a href="../home.html#art"> 
+                <h4>Art</h4>
+            </a>
+            <a  href="../home.html#about"> 
+                <h4>About</h4>
+            </a>
+        </div>
     </nav>
     <body style="background-color: black;">
+        <div id="modalMenu">
+            <div id="modalContent">
+                <a href="../home.html"><h4>Home</h4></a>
+                <a href="../home.html#dev"><h4>Development</h4></a>
+                <a href="../home.html#ux"><h4>UX/UI Design</h4></a>
+                <a href="../home.html#art"><h4>Art</h4></a>
+                <a href="../home.html#about"><h4>About</h4></a>
+            </div>
+        </div>
         <div class="galleryContainer" >
-            <img class="galleryItem" src="../../images/art/screenprints/moon1.png">
-            <img class="galleryItem" src="../../images/art/screenprints/jerusalem2.png">
-            <img class="galleryItem" src="../../images/art/screenprints/title.png">
-            <img class="galleryItem" src="../../images/art/screenprints/smokinglady.png">
-            <img class="galleryItem" src="../../images/art/screenprints/ladies.png">
-            <img class="galleryItem" src="../../images/art/screenprints/sh.png">
-            <img class="galleryItem" src="../../images/art/screenprints/jerusalem1.png">
-            <img class="galleryItem" src="../../images/art/screenprints/moon2.png">
-            <img class="galleryItem" src="../../images/art/screenprints/moon3.png">
+            <img class="galleryItem" src="../../images/art/screenprints/moon1.png" alt="Moon-1 Screenprint 22inx15in">
+            <img class="galleryItem" src="../../images/art/screenprints/jerusalem2.png" alt="JerUSAlem Screenprint 22inx15in">
+            <img class="galleryItem" src="../../images/art/screenprints/smokinglady.png" alt="Smoking-Lady Lino-Block-Print 22inx15in">
+            <img class="galleryItem" src="../../images/art/screenprints/ladies.png" alt="Wanderlust Screenprint 22inx15in">
+            <img class="galleryItem" src="../../images/art/screenprints/title.png" alt=" ">
+            <img class="galleryItem" src="../../images/art/screenprints/sh.png" alt="Strauss-Hauss Screenprint/Canvas 30inx30in">
+            <img class="galleryItem" src="../../images/art/screenprints/jerusalem1.png" alt="JerUSAlem Screenprint 22inx15in">
+            <img class="galleryItem" src="../../images/art/screenprints/moon2.png" alt="Moon-2 Screenprint 22inx15in">
+            <img class="galleryItem" src="../../images/art/screenprints/moon3.png" alt="Moon-3 Screenprint 22inx15in">
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <h5 id="imageDescription"></h5>
         </div>
     </body>
 </html>

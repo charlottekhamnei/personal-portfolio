@@ -70,3 +70,19 @@ h5 {
     color: white;
     cursor: pointer;
 }
+
+/* Responsive Style */ 
+
+@media screen and (max-width: 705px) {
+    .modal {
+        display: flex;
+        flex-flow: column;
+    }
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .modal h5 {
+        font-size: 20px;
+    }
+}

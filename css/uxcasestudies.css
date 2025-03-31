@@ -5,6 +5,259 @@
     margin: 0;
 }
 
+/* General Layout Based on Recordcrate Content */
+
+.section {
+    padding: 100px 65px;
+    align-items: center;
+    justify-content: center;
+}
+
 #intro {
-    padding-top: 100px;
+    padding: 200px 65px 100px;
+    justify-items: center;
+}
+
+#intro div {
+    padding: 50px 0 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#intro div p {
+    padding-right: 100px;
+}
+
+.mediaContainer {
+    width: 50%;
+    height: auto;
+}
+
+#synopsis div {
+    padding-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#synopsis div p {
+    padding-right: 50px;
+}
+
+
+#icon {
+    width: 25%;
+    height: auto;
+}
+
+#ufImg, #rebrandImg, #wireflowImg {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.mediaContainerFull {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+}
+
+.mediaContainerFull img {
+    width: 100%;
+}
+
+#rebrand p {
+    padding-top: 25px;
+}
+
+.subSection {
+    padding: 50px 0 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textContainer {
+    width: 50%;
+    padding-right: 200px;
+}
+
+.textContainer p {
+    padding-top: 25px;
+}
+
+/* BomF specifc styling */
+
+#socialMedia div {
+    padding-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#smGallery {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    gap: 10px;
+}
+
+#smGallery img {
+    width: calc(33.33% - 10px);
+    height: auto; 
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#recGallery {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+#recGallery img {
+    width: calc(50% - 10px); 
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#fundRacing p {
+    padding-top: 25px;
+}
+
+#eGallery {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+#eGallery img {
+    width: calc(100% - 10px); 
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+#raceGallery {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+#raceGallery img {
+    width: calc(50% - 10px); 
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* Happy Sunshine styling */ 
+
+#team p {
+    padding-top: 25px;
+}
+
+#researchGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: center; 
+    margin: 0;
+    gap: 10px;
+}
+
+#researchGallery img {
+    width: calc(50% - 10px); 
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+
+}#fidelityGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+#fidelityGallery img {
+    width: calc(50% - 10px); 
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* Portfolio Styling */
+
+#galGallery {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+#galGallery img {
+    width: calc(75% - 10px); 
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* Responsive Sizing */
+
+@media screen and (max-width: 1050px) {
+    #intro div {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .subSection {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 683px) {
+    #synopsis div {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+    
 }
